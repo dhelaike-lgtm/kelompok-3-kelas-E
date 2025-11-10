@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal</title>
+</head>
+<body>
+  <h2>Soal LKPD 3</h2>
+  <form id="formSoal">
+
+        <div></div>
+
+    <label>1. Sebuah taman di rumah Rani berbentuk segitiga siku-siku.
+Rani tahu bahwa keliling taman adalah 36 meter. Panjang salah satu sisi tegaknya adalah 9 meter, dan sisi lainnya 12 meter.
+Rani ingin menanam bunga di sepanjang sisi miring taman.
+Berapa panjang sisi miring taman yang harus ia ukur?
+Dan berapa luas taman yang dapat ia tanami rumput?</label><br>
+    <input type="text" id="jawaban1" required><br><br>
+
+        <!---->
+        <div></div>
+
+    <label>2. Dalam kegiatan 17 Agustus, sekolah membuat bendera segitiga sama kaki.
+Luas satu bendera adalah 1.200 cm², dan tinggi bendera 40 cm.
+Pak Hadi ingin tahu berapa panjang alas yang dibutuhkan untuk membuat satu bendera.
+Namun, kain yang tersedia lebarnya hanya setengah dari panjang alas bendera.
+Apakah kain tersebut cukup untuk membuat bendera? Jelaskan alasanmu!</label><br>
+    <input type="text" id="jawaban2" required><br><br>
+
+        <!---->
+        <div></div>
+
+    <label>3. Atap rumah Pak Bimo berbentuk segitiga sama sisi.
+Pak Bimo tahu bahwa keliling atap 24 meter.
+Ia ingin menutup atap bagian depan rumah dengan cat khusus.
+Jika tinggi segitiga tersebut adalah 6,5 meter, hitunglah:
+Berapa luas atap yang akan dicat?
+Jika setiap 1 m² memerlukan 0,3 liter cat, berapa liter cat yang dibutuhkan seluruhnya?</label><br>
+    <input type="text" id="jawaban3" required><br><br>
+
+
+    <button type="submit">Kirim Jawaban</button>
+  </form>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycby7PTAgwIYmrl85fK5h1APStZIB47VCcdhrTrirTLyGL4SyXJcQfb76jTToBUVmdotV/exec"; // dari Apps Script
+
+    document.getElementById("formSoal").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const data = {
+        nama: localStorage.getItem("nama"),
+        kelas: localStorage.getItem("kelas"),
+        jawaban1: document.getElementById("jawaban1").value,
+        jawaban2: document.getElementById("jawaban2").value,
+        jawaban3: document.getElementById("jawaban3").value
+      };
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(data)
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert("Jawaban berhasil dikirim!");
+        localStorage.clear(); // hapus data identitas setelah dikirim
+      })
+      .catch(error => alert("Terjadi kesalahan: " + error));
+    });
+
+
+  </script>
+</body>
+</html>
+
+    
+<!-- NAVIGATION BAR -->
+
+<div>
+
+    <button type="submit">
+                <a href="LKPD Geometri3.html" class="a-navbar">BACK</a>
+
+    </div>
+
+    

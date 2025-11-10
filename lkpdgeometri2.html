@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal</title>
+</head>
+<body>
+  <h2>Soal LKPD 2</h2>
+  <form id="formSoal">
+
+      <div> <img src="segitiga3.png" width="10%" height="10%">
+        <!---->
+
+        <div></div>
+
+    <label>1. Panjang alas segitiga 24 cm dan tinggi 18 cm. Luas segitiga tersebut adalah.......cm2</label><br>
+    <input type="text" id="jawaban1" required><br><br>
+
+      <div> <img src="segitiga4.png" width="10%" height="10%">
+        <!---->
+        <div></div>
+
+    <label>2. Sebuah kain bendera berbentuk segitiga memiliki alas 20 cm dan tinggi 15 cm.berapakah luas kain yang digunakan untuk membuat bendera itu ?</label><br>
+    <input type="text" id="jawaban2" required><br><br>
+
+      <div> <img src="segitiga5.png" width="10%" height="10%">
+        <!---->
+        <div></div>
+
+    <label>3. sebuah tenda pramuka memiliki bentuk segitiga di bagian depan.
+Panjang alas tenda 2 meter, dan tinggi dari tanah ke puncak tenda 1,5 meter.Hitunglah luas bagian depan tenda tersebut!</label><br>
+    <input type="text" id="jawaban3" required><br><br>
+
+
+    <button type="submit">Kirim Jawaban</button>
+  </form>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzY74XVdsj20oTiEbLW0OL7QcejnRS7A6865Mg2hgLGyziEWfU7uQwGtrsfQp4AdGeGyw/exec"; // dari Apps Script
+
+    document.getElementById("formSoal").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const data = {
+        nama: localStorage.getItem("nama"),
+        kelas: localStorage.getItem("kelas"),
+        jawaban1: document.getElementById("jawaban1").value,
+        jawaban2: document.getElementById("jawaban2").value,
+        jawaban3: document.getElementById("jawaban3").value
+      };
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(data)
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert("Jawaban berhasil dikirim!");
+        localStorage.clear(); // hapus data identitas setelah dikirim
+      })
+      .catch(error => alert("Terjadi kesalahan: " + error));
+    });
+
+
+  </script>
+</body>
+</html>
+
+    
+<!-- NAVIGATION BAR -->
+
+<div>
+
+    <button type="submit">
+                <a href="LKPD Geometri2.html" class="a-navbar">BACK</a>
+
+    </div>
+
+    

@@ -1,0 +1,255 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(154, 194, 255);
+}
+
+
+.container-navbar {
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 100px;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.li-navbar:hover {
+    background-color: rgb(66, 66, 66);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+
+}
+
+.h1-footer {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.h3-footer {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-navbar1 {
+    background-color: #3d418a;
+    width: 100%;
+    height: 100px;
+}
+
+.ul-navbar1 {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar1 {
+    border: 1px solid #3d418a;
+    background-color: #3d418a;
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.li-navbar1:hover {
+    background-color: rgb(42, 203, 106);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+.container-navbar2 {
+    background-color: #c94141;
+    width: 100%;
+    height: 100px;
+}
+
+.ul-navbar2 {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar2 {
+    border: 1px solid #c94141;
+    background-color: #c94141;
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.li-navbar2:hover {
+    background-color: rgb(226, 235, 57);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+.ul-navbar3 {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar3 {
+    border: 1px solid #000000;
+    background-color: #000000;
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.li-navbar3:hover {
+    background-color: rgb(4, 0, 111);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+ 
+.ul-navbar5  {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.ul-navbar6 {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar6 {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    color: white;
+}
+
+.li-navbar6:hover {
+    background-color: rgb(16, 188, 0);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+   
+.li-navbar7 {
+     border: 1px solid #000000;
+    background-color: #000000;
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#hasil {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.li-navbar9 {
+ border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    color: white;   
+}
+
+.li-navbar8 {
+    button {
+  display: block;
+  width: 100%;
+  background: #3a4bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+}
+
+.ul-navbar9 {
+          margin-top: 25px;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+}
+

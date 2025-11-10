@@ -1,0 +1,242 @@
+<!-- MULAI: Header Soal Rapi -->
+<section class="exam-header">
+  <div class="exam-top">
+    <div class="exam-title">
+      <h1>Soal Evaluasi</h1>
+      <p class="subtitle">Penjumlahan &amp; Pengurangan Pecahan — Kelas 5 / Semester 1</p>
+    </div>
+    <div class="exam-meta">
+      <table class="meta-table" role="presentation">
+        <tr><td><strong>Mata Pelajaran</strong></td><td>:</td><td>Matematika</td></tr>
+        <tr><td><strong>Materi</strong></td><td>:</td><td>Penjumlahan dan Pengurangan Pecahan</td></tr>
+        <tr><td><strong>Kelas / Semester</strong></td><td>:</td><td>5 / Semester 1</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="instructions">
+    <h2>Petunjuk Pengerjaan</h2>
+    <ul>
+      <li>Bacalah setiap soal dengan teliti sebelum menjawab.</li>
+      <li>Identifikasi apa yang diketahui dan yang ditanyakan dalam soal.</li>
+      <li>Gunakan langkah penjumlahan/pengurangan pecahan: samakan penyebut, operasikan pembilang, sederhanakan hasil.</li>
+      <li>Tulis langkah-langkah penyelesaian dan alasan setiap langkah pada kolom "Langkah / Alasan".</li>
+      <li>Jawablah di tempat yang telah disediakan.</li>
+    </ul>
+  </div>
+</section>
+<!-- AKHIR: Header Soal Rapi -->
+
+<style>
+  /* Styling header soal - paste di <head> atau di bagian atas file */
+  .exam-header{background:#fff;border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06);font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+  .exam-top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+  .exam-title h1{margin:0;font-size:22px;color:#0f172a}
+  .exam-title .subtitle{margin:4px 0 0;font-size:13px;color:#475569}
+  .exam-meta{min-width:220px}
+  .meta-table{border-collapse:collapse;font-size:14px;color:#0f172a}
+  .meta-table td{padding:3px 6px;vertical-align:top}
+  .meta-table tr td:first-child{width:140px;font-weight:600;color:#0b1220}
+  .instructions{background:#f8fafc;padding:12px;border-radius:8px;margin-top:12px;border:1px solid #e6edf3}
+  .instructions h2{margin:0 0 6px;font-size:16px;color:#0b1220}
+  .instructions ul{margin:0;padding-left:18px;color:#334155;font-size:14px}
+  .instructions li{margin-bottom:6px;line-height:1.45}
+  /* Responsive */
+  @media (max-width:600px){
+    .exam-top{flex-direction:column;align-items:flex-start}
+    .meta-table td:first-child{width:120px}
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Soal Interaktif Pecahan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .soal {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    #hasil {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pilihan GANDA</h2>
+
+  <form id="formSoal">
+
+    <!-- Pilihan Ganda -->
+    <div class="soal">
+      <h3>Pilihan Ganda</h3>
+
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+      <p>1. Hitung hasil dari 2\( \frac{3}{4} \) +  \( \frac{2}{5} \) = adalah ...</p>
+      <input type="radio" name="pg1" value="a">a. 3\( \frac{1}{20} \)<br>
+      <input type="radio" name="pg1" value="b">b. 3\( \frac{2}{20} \)<br>
+      <input type="radio" name="pg1" value="c">c. 3\( \frac{3}{20} \)<br>
+      <input type="radio" name="pg1" value="d">d. 3\( \frac{4}{20} \)<br>
+
+      <p>2. Hitung hasil dari \( \frac{1}{3} \) +  1\( \frac{4}{6} \) = adalah ...</p>
+      <input type="radio" name="pg2" value="a">a. 1\( \frac{5}{6} \)<br>
+      <input type="radio" name="pg2" value="b">b. 1\( \frac{4}{6} \)<br>
+      <input type="radio" name="pg2" value="c">c. 2<br>
+      <input type="radio" name="pg2" value="d">d. 1\( \frac{3}{6} \)<br>
+
+      <p>3. Hitung hasil dari 3\( \frac{1}{2} \) +  2\( \frac{3}{5} \) = adalah ...</p>
+      <input type="radio" name="pg3" value="a">a. 6\( \frac{1}{10} \)<br>
+      <input type="radio" name="pg3" value="b">b. 6\( \frac{2}{10} \)<br>
+      <input type="radio" name="pg3" value="c">c. 5\( \frac{9}{10} \)<br>
+      <input type="radio" name="pg3" value="d">d. 5\( \frac{7}{10} \)<br>
+
+      <p>4. Hitung hasil dari 3\( \frac{3}{4} \) -  \( \frac{1}{5} \) = adalah...</p>
+      <input type="radio" name="pg4" value="a">a. 3\( \frac{7}{20} \)<br>
+      <input type="radio" name="pg4" value="b">b. 3\( \frac{11}{20} \)<br>
+      <input type="radio" name="pg4" value="c">c. 3\( \frac{9}{20} \)<br>
+      <input type="radio" name="pg4" value="d">d. 3\( \frac{13}{20} \)<br>
+
+      <p>5. Hitung hasil dari 3\( \frac{2}{3} \) -  2\( \frac{1}{5} \) = adalah ...</p>
+      <input type="radio" name="pg5" value="a">a. 1\( \frac{1}{15} \)<br>
+      <input type="radio" name="pg5" value="b">b. 1\( \frac{6}{15} \)<br>
+      <input type="radio" name="pg5" value="c">c. 1\( \frac{7}{15} \)<br>
+      <input type="radio" name="pg5" value="d">d. 1\( \frac{8}{15} \)<br>
+    </div>
+
+    <!-- Esai -->
+    <div class="soal">
+      <h3>Esai</h3>
+
+      <p>1.  Siti memiliki pita sepanjang 2\( \frac{1}{2} \) meter. Ia membeli lagi 1\( \frac{1}{4} \) meter,
+lalu menggunakan 1\( \frac{3}{4} \) meter untuk menghias kado. <p>
+</p>Berapa sisa pita Siti sekarang?</p>
+      <textarea name="es1" rows="3"></textarea>
+
+      <p>2. Andi memiliki tali sepanjang 3\( \frac{1}{3} \) meter. Ia menambahnya lagi 1\( \frac{2}{3} \) meter, kemudian memotongnya 2\( \frac{1}{4} \) meter untuk digunakan. <p>
+      </p>Berapa panjang tali yang tersisa?</p>
+      <textarea name="es2" rows="3"></textarea>
+
+      <p>3. Ibu membeli 2\( \frac{1}{2} \)kg tepung dan 1\( \frac{3}{4} \)kg gula, Sebanyak 1\( \frac{1}{4} \)kg bahan digunakan untuk membuat kue.<p>
+      </p> Berapa sisa bahan yang masih ada?</p>
+      <textarea name="es3" rows="3"></textarea>
+
+      <p>4. Rina membaca buku setebal 4\( \frac{1}{2} \) halaman pada hari senin. Hari selasa ia membaca lagi 2\( \frac{1}{4} \) halaman, lalu lupa dan mengulang 1\( \frac{1}{2} \) halaman yang sama </p>
+      <p>Berapa halaman baru yang benar-benar dibacanya?</p>
+      <textarea name="es4" rows="3"></textarea>
+
+      <p>5. Pak Budi memiliki kayu sepanjang 5\( \frac{1}{4} \) meter. ia memotong 2\( \frac{1}{2} \) meter, lalu menemukan potongan lain sepanjang 1\( \frac{3}{4} \) meter dan menyambungnya <p>
+        <p>Berapa panjang kayu sekarang?</p>
+      <textarea name="es5" rows="3"></textarea>
+    </div>
+
+    <button type="button" onclick="periksaNilai()">Lihat Nilai</button>
+  <button type="button" onclick="window.location.href='Evaluasi.html'">Back</button>
+
+
+  </form>
+
+  <div id="hasil"></div>
+
+  <script>
+    function periksaNilai() {
+      // --- KUNCI JAWABAN PILIHAN GANDA ---
+      const kunciPG = { pg1: "c", pg2: "c", pg3: "a", pg4: "b", pg5: "c" };
+
+      // --- KATA KUNCI JAWABAN ESAI (bisa kamu ubah sesuai kebutuhan) ---
+      const kunciEsai = {
+        es1: ["2 meter", "2m", "2meter", "2"],
+        es2: ["2 3/4"],
+        es3: ["3kg", "3 kg" ],
+        es4: ["5 1/4"],
+        es5: ["4 1/2"]
+      };
+
+      let nilaiPG = 0;
+      let nilaiEsai = 0;
+      const totalPG = 5;
+      const totalEsai = 5;
+
+      // === PENILAIAN PILIHAN GANDA ===
+      for (let i = 1; i <= totalPG; i++) {
+        const jawaban = document.querySelector(`input[name="pg${i}"]:checked`);
+        if (jawaban && jawaban.value === kunciPG[`pg${i}`]) {
+          nilaiPG++;
+        }
+      }
+
+      // === Penilaian esai (1 jawaban benar langsung nilai penuh) ===
+      for (let i = 1; i <= totalEsai; i++) {
+        const teks = document.querySelector(`textarea[name="es${i}"]`).value
+          .toLowerCase()
+          .replace(/\s+/g, ''); // hapus semua spasi
+        const kunciList = kunciEsai[`es${i}`];
+        let benar = false;
+
+        for (let k of kunciList) {
+          if (teks.includes(k.replace(/\s+/g, ''))) {
+            benar = true;
+            break;
+          }
+        }
+
+        if (benar) nilaiEsai++; // 1 poin penuh kalau benar
+      }
+      // === Hitung nilai akhir ===
+      let skorPG = (nilaiPG / totalPG) * 50;
+      let skorEsai = (nilaiEsai / totalEsai) * 50;
+      let totalNilai = skorPG + skorEsai;
+
+      document.getElementById("hasil").innerHTML = `
+        Nilai Pilihan Ganda: ${skorPG.toFixed(1)} / 50<br>
+        Nilai Esai: ${skorEsai.toFixed(1)} / 50<br>
+        <b>Total Nilai: ${totalNilai.toFixed(1)} / 100</b>
+      `;
+    }
+  </script>
+
+</body>
+</html>
